@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPL Score Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+         <!-- Website Title -->
+        <div class="container">
+            <h1 class='container-heading'>Score Predictor for Indian Premier League(IPL)</h1>
+            <div class='description'>
+                <p>A Machine Learning Web App,which predict the score of first inning in IPL</p>
+            </div>
+        </div>
+         <!-- Prediction Area -->
+         <div class="prediction-area">
+             <!-- Result -->
+			<div class="results">
+				<p class='result-p'>The final predicted score (range): {{ lower_limit }} to {{ upper_limit }}</p>
+            </div>
+        </div>
+        
+     <!-- Footer -->
+     <div class='footer'>
+        <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/tusharagarwal176/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+        </div>
+        <p class='footer-description'>Made with ❤️ by Tushar Agarwal.</p>
+    </div>
+    
+</body>
+</html>

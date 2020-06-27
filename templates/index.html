@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Score Prediction</title>
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+     <!-- Website Title -->
+    <div class="container">
+        <h1 class='container-heading'>Score Predictor for Indian Premier League(IPL)</h1>
+        <div class='description'>
+            <p>A Machine Learning Web App,which predict the score of first inning in IPL</p>
+        </div>
+    </div>
+
+    <!-- Prediction Form -->
+    <div class='div2'>
+        <form action="{{ url_for('predict') }}" method="POST">
+            <!-- Batting Team Dropdown -->
+            <select class="form-input align-center" name="battingteam">
+                <option value="none">--- Select a Batting team ---</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Kings XI Punjab">Kings XI Punjab</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Daredevils">Delhi Daredevils</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select><br>
+            <!-- Bowling Team Dropdown -->
+            <select class="form-input align-center" name="bowlingteam">
+                <option value="none">--- Select a Bowling team ---</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Kings XI Punjab">Kings XI Punjab</option>
+                <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                <option value="Delhi Daredevils">Delhi Daredevils</option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+            </select><br>
+            <input class="form-input" type="text" name="overs" placeholder="Overs (>= 5.0) (eg. 10.5)"><br>
+            <input class="form-input" type="text" name="runs" placeholder="Runs (eg. 85)"><br>
+            <input class="form-input" type="text" name="wickets" placeholder="Wickets (eg. 4)"><br>
+            <input class="form-input" type="text" name="stricker" placeholder="Max run(Stricker,non-stricker)"><br>
+            <input class="form-input" type="text" name="non_stricker" placeholder="Min run(Stricker,non-stricker)"><br>
+
+    <input type="submit" class="myButton" value="Predict_Score">
+    </form>
+    </div>
+     <!-- Footer -->
+     <div class='footer'>
+        <div class="contact">
+            <a target="_blank" href="https://www.linkedin.com/in/tusharagarwal176/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+        </div>
+        <p class='footer-description'>Made with ❤️ by Tushar Agarwal.</p>
+    </div>
+
+</body>
+</html>
