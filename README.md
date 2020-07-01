@@ -4,13 +4,13 @@
 - The link for the app is-->https://predicting-ipl-scores.herokuapp.com/
 
 ## Input Required(Features Used)
-- batting team: Batting team name.
-- bowling_team: Bowling team name.
-- runs: Runs scored by team till that point of instance.
-- wickets: Number of Wickets fallen of the team till that point of instance.
-- overs: Number of Overs bowled till that point of instance.
-- striker: max(runs scored by striker, runs scored by non-striker).
-- non-striker: min(runs scored by striker, runs scored by non-striker).
+- **batting team**: Batting team name.
+- **bowling_team**: Bowling team name.
+- **runs**: Runs scored by team till that point of instance.
+- **wickets**: Number of Wickets fallen of the team till that point of instance.
+- **overs**: Number of Overs bowled till that point of instance.
+- **striker**: max(runs scored by striker, runs scored by non-striker).
+- **non-striker**: min(runs scored by striker, runs scored by non-striker).
 
 ## Demo
  ![Demo of Web app](demo.gif)
