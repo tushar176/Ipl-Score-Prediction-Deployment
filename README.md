@@ -14,3 +14,7 @@
 
 ## Demo
  ![Demo of Web app](demo.gif)
+
+**Give a ⭐ if you like it or if this repository helped you in any way.**
+
+**Thank You..**
